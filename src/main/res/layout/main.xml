@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+ <ProgressBar
+	style="?android:attr/progressBarStyleHorizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:id="@+id/m_progress_bar"
+	android:indeterminateOnly="true"
+	android:visibility="gone"/>
+ 
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:hint="Enter url"
+			android:id="@+id/m_url_et"
+			android:layout_toLeftOf="@+id/m_load_btn"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Load"
+			android:layout_alignParentRight="true"
+			android:id="@+id/m_load_btn"
+			android:layout_marginRight="5dp"/>
+
+	</RelativeLayout>
+
+	<EditText
+		android:id="@+id/m_displayer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="top|left"
+		android:layout_margin="5dp"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:typeface="monospace"/>
+
+</LinearLayout>
+
